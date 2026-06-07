@@ -6,9 +6,4 @@ test("locators are lazy, strict, and auto-wait", async ({ page }) => {
     await page.getByRole("link", { name: 'Make Appointment', disabled: false }).click();
 
 
-
-
-
-
-
 });

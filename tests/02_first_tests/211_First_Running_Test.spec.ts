@@ -5,18 +5,18 @@
 // - Navigation
 // - Element interaction
 
-import {test,expect} from 'playwright/test'; 
+import { test, expect } from '@playwright/test';
 
-test('Verify our first TC', async({ page })=>{
+test('Verify our first TC', async ({ page }) => {
 
-    await page.goto("https://app.vwo.com");
+    await page.goto('https://app.vwo.com');
 
-    await expect(page).toHaveTitle("Login - VWO"); // tohaveTile returns promise
+    await expect(page).toHaveTitle('Login - VWO');
 
-    const img_vwo= page.locator('img'); // here no await becaue location doesnt return any promise
+    const img_vwo = page.locator('img');
 
     await expect(img_vwo).toBeVisible();
-});
 
-// Whatever returns promise we should add await to that.
-// Explicitely Brower and BrowserContext not required to be created, Playwright will do that by default.
+
+
+});

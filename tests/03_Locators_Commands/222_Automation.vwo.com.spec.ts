@@ -3,6 +3,8 @@ import { test, expect } from "@playwright/test";
 test("locators are lazy, strict, and auto-wait", async ({ page }) => {
     await page.goto("https://app.vwo.com/#login");
 
+
+
     // <input 
     // type="email" 
     // class="text-input W(100%)" 

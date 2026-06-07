@@ -1,7 +1,8 @@
-import {test,expect} from 'playwright/test';
+import { test, expect } from '@playwright/test';
 
-test('Verify the title of app.vwo.com', async ({page}) =>{
+test('Verify the title of the app.vwo.com', async ({ page }) => {
 
-await page.goto("https://app.vwo.com");
-await expect(page).toHaveTitle("Login - VWO");
+    await page.goto("https://app.vwo.com");
+    await expect(page).toHaveTitle("Login - VWO");
+
 });
